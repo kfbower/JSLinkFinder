@@ -1,10 +1,12 @@
 let urls = document.getElementsByTagName('a')
 console.log(urls)
-
+//Optional 1 second wait code
+//const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 for (let i=0; i<urls.length; i++){
 if ( urls[i].getAttribute('href')!= null && urls[i].getAttribute('href').indexOf('#')=== -1 && urls[i].getAttribute('href').indexOf('mailto')=== -1 && urls[i].getAttribute('href').match(/exampe/)){
 
 window.open(urls[i].getAttribute('href'),"_blank")
-
+//Optional 1 second wait code
+//await sleep(1000)
 }
 else{}}
